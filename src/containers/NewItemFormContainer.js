@@ -1,5 +1,4 @@
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
 import NewItemForm from '../components/NewItemForm';
 import { addItem } from '../store/items/actions';
 

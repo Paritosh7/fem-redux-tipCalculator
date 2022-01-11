@@ -2,9 +2,8 @@ import { Card } from '@twilio-paste/core';
 import { useSelector } from 'react-redux';
 import { MenuItemContainer } from '../containers/MenuItemsContainer';
 import { NewItemFormContainer } from '../containers/NewItemFormContainer';
+import { SummaryContainer } from '../containers/SummaryContainer';
 import { TipSelectContainer } from '../containers/TipSelectContainer';
-
-import { Summary } from './Summary';
 
 const Calculator = () => {
   const items = useSelector((state) => state.items);
@@ -14,7 +13,7 @@ const Calculator = () => {
       <NewItemFormContainer />
       <MenuItemContainer items={items} />
       <TipSelectContainer />
-      <Summary />
+      <SummaryContainer />
     </Card>
   );
 };
